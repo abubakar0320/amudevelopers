@@ -4,13 +4,62 @@
   "description": "Award-winning software house in Pakistan specializing in custom software development, web applications, and mobile apps.",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192 512x512"
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "72x72",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "144x144",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "152x152",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "384x384",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#0b1120",
-  "background_color": "#0b1120"
+  "background_color": "#0b1120",
+  "categories": ["business", "productivity"],
+  "lang": "en",
+  "prefer_related_applications": false
 }
