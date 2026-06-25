@@ -69,9 +69,9 @@ export default function Home() {
             <p>Everything you need to get your business online, looking great, and growing fast.</p>
           </div>
           <div className="services-grid">
-            {siteData.services?.slice(0, 3).map((service, idx) => {
-              const glowClass = idx === 0 ? 'box-glow-blue' : idx === 1 ? 'box-glow-green' : 'box-glow-orange';
-              const iconBg = idx === 0 ? 'bg-gradient-primary' : idx === 1 ? 'bg-gradient-green' : 'bg-gradient-orange';
+            {siteData.services?.slice(0, 4).map((service, idx) => {
+              const glowClass = idx === 0 ? 'box-glow-blue' : idx === 1 ? 'box-glow-green' : idx === 2 ? 'box-glow-orange' : 'box-glow-purple';
+              const iconBg = idx === 0 ? 'bg-gradient-primary' : idx === 1 ? 'bg-gradient-green' : idx === 2 ? 'bg-gradient-orange' : 'bg-gradient-purple';
               return (
               <div className={`service-card glass-dark fade-up ${glowClass}`} key={service.id || idx} style={{transitionDelay: `${idx * 0.1}s`}}>
                 <div className={`service-icon ${iconBg}`}>
