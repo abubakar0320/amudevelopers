@@ -31,7 +31,7 @@ export default function Portfolio() {
       bio: "Dedicated Full Stack Developer with expertise in crafting seamless user experiences and powerful backend systems. I focus on writing clean, efficient code and designing database architectures that power modern, data-driven web applications.",
       skills: ["React.js", "Node.js", "Express", "Database Design", "REST APIs"],
       link: "#",
-      img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      img: "/shoaib_afzal_chattha.jpeg",
       glow: "box-glow-green",
       badgeColor: "bg-gradient-green"
     },

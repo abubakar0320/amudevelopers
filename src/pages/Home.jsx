@@ -224,7 +224,7 @@ export default function Home() {
                 skills: ["React.js", "Node.js", "Database Design"],
                 bio: "Crafting seamless user experiences and powerful backend systems for modern web apps.",
                 socials: { github: "#", linkedin: "#", twitter: "#" },
-                img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+                img: "/shoaib_afzal_chattha.jpeg",
                 coverColor: "bg-gradient-orange"
               },
               { 
