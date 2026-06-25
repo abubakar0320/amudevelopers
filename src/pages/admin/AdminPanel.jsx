@@ -109,7 +109,7 @@ export default function AdminPanel() {
               <input type="text" placeholder="Search orders, clients..." />
             </div>
             <div className="admin-profile">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" alt="Admin" />
+              <img src="/Abubakar Siddiue.jpg" alt="Admin Abubakar" />
               <div className="admin-profile-info">
                 <span className="admin-profile-name">Abubakar Siddique</span>
                 <span className="admin-profile-role">Super Admin</span>

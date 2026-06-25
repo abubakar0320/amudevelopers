@@ -90,8 +90,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* 4. Meet the Founders & Team */}
-      <section className="section-padding" style={{ background: 'linear-gradient(135deg, #fdf4ff 0%, #f0f9ff 100%)' }}>
+      {/* Message from the Founder */}
+      <section className="section-padding" style={{ background: 'white' }}>
+        <div className="container">
+          <div className="glass-card fade-up box-glow-blue" style={{ padding: '3rem', display: 'flex', flexWrap: 'wrap', gap: '3rem', alignItems: 'center', background: 'rgba(255,255,255,0.95)' }}>
+            <div style={{ flex: '1 1 300px', textAlign: 'center' }}>
+              <div style={{ position: 'relative', display: 'inline-block' }}>
+                <img src="/Abubakar Siddiue.jpg" alt="Abubakar Siddique" style={{ width: '100%', maxWidth: '350px', borderRadius: '20px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)' }} />
+                <div className="bg-gradient-primary" style={{ position: 'absolute', bottom: '-20px', right: '-20px', padding: '1rem 2rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', boxShadow: '0 10px 20px rgba(59,130,246,0.3)' }}>
+                  CEO & Founder
+                </div>
+              </div>
+            </div>
+            <div style={{ flex: '2 1 400px' }}>
+              <h2 className="text-gradient-amu" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>A Message From The Founder</h2>
+              <i className="fas fa-quote-left" style={{ fontSize: '3rem', color: 'rgba(59,130,246,0.2)', marginBottom: '1rem' }}></i>
+              <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: 'var(--text-muted)', marginBottom: '1.5rem', fontStyle: 'italic' }}>
+                "At AMU Developers, we don't just write code; we build digital experiences that drive real business growth. Our vision was always to create an agency where passion meets precision, and where every client feels like our only client. We treat your projects as if they were our own, ensuring top-tier quality, security, and scalability from day one."
+              </p>
+              <h4 style={{ fontSize: '1.3rem', color: 'var(--secondary)', marginBottom: '0.2rem' }}>Abubakar Siddique</h4>
+              <p style={{ color: 'var(--primary)', fontWeight: '600' }}>Founder & Lead Engineer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Team Overview */}
+      <section className="section-padding" style={{ background: 'linear-gradient(120deg, #f8fafc 0%, #e2e8f0 100%)' }}>
         <div className="container">
           <div className="section-title fade-up text-center">
             <h2>Meet The <span className="text-gradient-teal">Founders & Team</span></h2>
@@ -104,7 +129,7 @@ export default function About() {
                 role: "CEO & Full Stack Expert", 
                 skills: ["MERN Stack", "Mobile Apps", "Architecture"],
                 bio: "Leading the company vision while engineering robust and scalable software solutions.",
-                img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+                img: "/Abubakar Siddiue.jpg",
                 coverColor: "bg-gradient-purple"
               },
               { 
