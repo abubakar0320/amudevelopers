@@ -47,6 +47,8 @@
   top: 0;
   z-index: 5;
 }
+.admin-header-title { display: flex; align-items: center; gap: 1rem; }
+.admin-hamburger { display: none; background: none; border: none; font-size: 1.5rem; color: #0f172a; cursor: pointer; padding: 0; }
 .admin-header h1 { font-size: 1.4rem; color: #0f172a; margin: 0; font-weight: 700; }
 .admin-top-nav {
   display: flex;
@@ -286,3 +288,49 @@ input:checked + .slider:before { transform: translateX(22px); }
 .status-in-progress { color: #eab308; background: #fefce8; }
 .status-completed { color: #22c55e; background: #f0fdf4; }
 .status-cancelled { color: #ef4444; background: #fef2f2; }
+
+/* Responsive Dashboard Mobile View */
+@media (max-width: 1024px) {
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .admin-sidebar.open { left: 0; }
+  .admin-sidebar-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+  }
+  .admin-hamburger { display: block; }
+  
+  .admin-header { padding: 1rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .admin-top-nav { width: 100%; justify-content: space-between; }
+  .admin-profile-info { display: none; }
+  
+  .admin-body { padding: 1rem; }
+  
+  .dashboard-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .orders-table th, .orders-table td { padding: 0.8rem; }
+  .orders-table { min-width: 800px; } /* Force horizontal scroll */
+  
+  .admin-form { padding: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .admin-search { display: none; } /* Hide search on very small screens */
+  .admin-header-title h1 { font-size: 1.1rem; }
+  .admin-logout-btn { padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+  
+  .dash-card { flex-direction: column; text-align: center; padding: 1rem; }
+  .dash-icon { width: 50px; height: 50px; font-size: 1.4rem; }
+  
+  .dashboard-grid { grid-template-columns: 1fr; }
+  
+  .form-group.toggle-switch-group { flex-direction: column; align-items: flex-start; text-align: left; }
+}

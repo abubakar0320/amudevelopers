@@ -7,6 +7,7 @@ export default function AdminPanel() {
   const { siteData, updateSiteData } = useContext(SiteContext);
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [formData, setFormData] = useState(siteData);
   const [orders, setOrders] = useState([]);
   const [orderFilter, setOrderFilter] = useState('All');
@@ -58,7 +59,10 @@ export default function AdminPanel() {
 
   return (
     <div className="admin-layout">
-      <div className="admin-sidebar">
+      {/* Mobile Sidebar Overlay */}
+      {isSidebarOpen && <div className="admin-sidebar-overlay" onClick={() => setIsSidebarOpen(false)}></div>}
+      
+      <div className={`admin-sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="admin-sidebar-header">
           <i className="fas fa-layer-group" style={{color: '#38bdf8', fontSize: '1.8rem'}}></i>
           <h2>
@@ -84,7 +88,11 @@ export default function AdminPanel() {
       </div>
       <div className="admin-content">
         <div className="admin-header">
-          <h1>
+          <div className="admin-header-title">
+            <button className="admin-hamburger" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+              <i className="fas fa-bars"></i>
+            </button>
+            <h1>
             {activeTab === 'dashboard' ? 'Overview Dashboard' : 
              activeTab === 'general' ? 'General Settings' : 
              activeTab === 'hero' ? 'Hero Settings' : 
@@ -94,6 +102,7 @@ export default function AdminPanel() {
              activeTab === 'security' ? 'Security Settings' : 
              'Contact Settings'}
           </h1>
+          </div>
           <div className="admin-top-nav">
             <div className="admin-search">
               <i className="fas fa-search"></i>
