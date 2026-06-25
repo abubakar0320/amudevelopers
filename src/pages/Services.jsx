@@ -116,7 +116,7 @@ export default function Services() {
           </div>
           <div className="industries-grid">
             {[
-              { name: 'FinTech & Finance', icon: 'fa-chart-pie', color: 'blue' },
+              { name: 'FinTech & Finance', icon: 'fa-chart-pie', color: 'primary' },
               { name: 'Healthcare & Medical', icon: 'fa-heartbeat', color: 'pink' },
               { name: 'E-Commerce & Retail', icon: 'fa-shopping-cart', color: 'orange' },
               { name: 'Education & EdTech', icon: 'fa-graduation-cap', color: 'purple' },
