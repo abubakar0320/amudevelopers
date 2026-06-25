@@ -137,7 +137,7 @@ export default function About() {
                 role: "Co-Founder & Developer", 
                 skills: ["React.js", "Node.js", "Databases"],
                 bio: "Crafting seamless user experiences and powerful backend systems for modern web apps.",
-                img: "/shoaib afzal chattha.jpeg",
+                img: "/shoaib_afzal_chattha.jpeg",
                 coverColor: "bg-gradient-orange"
               },
               { 
