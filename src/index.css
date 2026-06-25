@@ -597,6 +597,9 @@ img { max-width: 100%; display: block; }
   .hero-btns { flex-direction: column; width: 100%; }
   .btn { width: 100%; justify-content: center; }
   
+  .marquee-content { gap: 3rem; padding-right: 3rem; }
+  .marquee-content img { height: 30px; }
+  
   .section-padding { padding: 4rem 5%; }
   .section-title h2 { font-size: 2.2rem; }
   .section-title p { font-size: 1rem; }
@@ -832,13 +835,17 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-shrink: 0;
   align-items: center;
+  gap: 6rem;
+  padding-right: 6rem;
 }
 .marquee-content img {
-  max-height: 40px;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
   filter: grayscale(0%) opacity(0.9);
   transition: var(--transition);
-  margin: 0 3rem;
   flex-shrink: 0;
+  display: block;
 }
 .marquee-content img:hover {
   filter: grayscale(0%) opacity(1);
