@@ -90,27 +90,52 @@ export default function About() {
         </div>
       </section>
 
-      {/* Message from the Founder */}
+      {/* Messages from the Founders */}
       <section className="section-padding" style={{ background: 'white' }}>
         <div className="container">
-          <div className="glass-card fade-up box-glow-blue" style={{ padding: '3rem', display: 'flex', flexWrap: 'wrap', gap: '3rem', alignItems: 'center', background: 'rgba(255,255,255,0.95)' }}>
-            <div style={{ flex: '1 1 300px', textAlign: 'center' }}>
-              <div style={{ position: 'relative', display: 'inline-block' }}>
-                <img src="/Abubakar Siddiue.jpg" alt="Abubakar Siddique" style={{ width: '100%', maxWidth: '350px', borderRadius: '20px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)' }} />
-                <div className="bg-gradient-primary" style={{ position: 'absolute', bottom: '-20px', right: '-20px', padding: '1rem 2rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', boxShadow: '0 10px 20px rgba(59,130,246,0.3)' }}>
+          <div className="section-title fade-up text-center mb-5">
+            <h2>Messages from the <span className="text-gradient-amu">Founders</span></h2>
+            <p>The visionaries driving AMU Developers forward.</p>
+          </div>
+          
+          <div className="founders-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem' }}>
+            
+            {/* Abubakar Siddique Card */}
+            <div className="glass-card fade-up box-glow-blue" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center', background: 'rgba(255,255,255,0.95)' }}>
+              <div style={{ position: 'relative', width: '100%', maxWidth: '300px' }}>
+                <img src="/Abubakar Siddiue.jpg" alt="Abubakar Siddique" style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)' }} />
+                <div className="bg-gradient-primary" style={{ position: 'absolute', bottom: '-15px', right: '-15px', padding: '0.8rem 1.5rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', boxShadow: '0 10px 20px rgba(59,130,246,0.3)', fontSize: '0.9rem' }}>
                   CEO & Founder
                 </div>
               </div>
+              <div style={{ textAlign: 'center' }}>
+                <i className="fas fa-quote-left" style={{ fontSize: '2rem', color: 'rgba(59,130,246,0.2)', marginBottom: '1rem' }}></i>
+                <p style={{ fontSize: '1rem', lineHeight: '1.7', color: 'var(--text-muted)', marginBottom: '1.5rem', fontStyle: 'italic' }}>
+                  "At AMU Developers, we don't just write code; we build digital experiences that drive real business growth. Our vision was always to create an agency where passion meets precision."
+                </p>
+                <h4 style={{ fontSize: '1.3rem', color: 'var(--secondary)', marginBottom: '0.2rem' }}>Abubakar Siddique</h4>
+                <p style={{ color: 'var(--primary)', fontWeight: '600', fontSize: '0.9rem' }}>Lead Software Engineer</p>
+              </div>
             </div>
-            <div style={{ flex: '2 1 400px' }}>
-              <h2 className="text-gradient-amu" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>A Message From The Founder</h2>
-              <i className="fas fa-quote-left" style={{ fontSize: '3rem', color: 'rgba(59,130,246,0.2)', marginBottom: '1rem' }}></i>
-              <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: 'var(--text-muted)', marginBottom: '1.5rem', fontStyle: 'italic' }}>
-                "At AMU Developers, we don't just write code; we build digital experiences that drive real business growth. Our vision was always to create an agency where passion meets precision, and where every client feels like our only client. We treat your projects as if they were our own, ensuring top-tier quality, security, and scalability from day one."
-              </p>
-              <h4 style={{ fontSize: '1.3rem', color: 'var(--secondary)', marginBottom: '0.2rem' }}>Abubakar Siddique</h4>
-              <p style={{ color: 'var(--primary)', fontWeight: '600' }}>Founder & Lead Engineer</p>
+
+            {/* Shoaib Afzal Chattha Card */}
+            <div className="glass-card fade-up box-glow-blue" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center', background: 'rgba(255,255,255,0.95)' }}>
+              <div style={{ position: 'relative', width: '100%', maxWidth: '300px' }}>
+                <img src="/shoaib afzal chattha.jpeg" alt="Shoaib Afzal Chattha" style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 15px 35px rgba(0,0,0,0.1)' }} />
+                <div className="bg-gradient-purple" style={{ position: 'absolute', bottom: '-15px', right: '-15px', padding: '0.8rem 1.5rem', borderRadius: '10px', color: 'white', fontWeight: 'bold', boxShadow: '0 10px 20px rgba(139,92,246,0.3)', fontSize: '0.9rem' }}>
+                  Co-Founder
+                </div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <i className="fas fa-quote-left" style={{ fontSize: '2rem', color: 'rgba(139,92,246,0.2)', marginBottom: '1rem' }}></i>
+                <p style={{ fontSize: '1rem', lineHeight: '1.7', color: 'var(--text-muted)', marginBottom: '1.5rem', fontStyle: 'italic' }}>
+                  "We believe in creating scalable architectures and seamless user experiences. Every project is an opportunity to innovate and deliver solutions that exceed our clients' expectations."
+                </p>
+                <h4 style={{ fontSize: '1.3rem', color: 'var(--secondary)', marginBottom: '0.2rem' }}>Shoaib Afzal Chattha</h4>
+                <p style={{ color: 'var(--primary)', fontWeight: '600', fontSize: '0.9rem' }}>Full Stack Architect</p>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -134,10 +159,10 @@ export default function About() {
               },
               { 
                 name: "Shoaib Afzal Chattha", 
-                role: "Full Stack Developer", 
+                role: "Co-Founder & Developer", 
                 skills: ["React.js", "Node.js", "Databases"],
                 bio: "Crafting seamless user experiences and powerful backend systems for modern web apps.",
-                img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+                img: "/shoaib afzal chattha.jpeg",
                 coverColor: "bg-gradient-orange"
               },
               { 
