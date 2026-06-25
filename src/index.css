@@ -475,6 +475,48 @@ img { max-width: 100%; display: block; }
 .footer-bottom-links a { color: #94a3b8; transition: 0.3s; font-size: 0.95rem; }
 .footer-bottom-links a:hover { color: white; }
 
+/* Industries Grid (Services Page) */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.industry-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.industry-card:hover {
+  transform: translateY(-10px);
+}
+.industry-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.industry-title {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: 700;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .footer-bottom { flex-direction: column; text-align: center; gap: 1.5rem; }
   .footer-bottom-links { justify-content: center; flex-wrap: wrap; gap: 1rem; }
@@ -539,7 +581,8 @@ img { max-width: 100%; display: block; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .section-padding { padding: 4rem 5%; }
   .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-  .services-grid, .features-grid, .testimonials-grid, .portfolio-grid, .team-grid, .portfolio-gallery { grid-template-columns: 1fr; }
+  .features-grid, .testimonials-grid, .portfolio-grid, .team-grid, .portfolio-gallery { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .form-grid { grid-template-columns: 1fr; }
   .about-features { grid-template-columns: 1fr; }
   .contact-info-wrap { padding: 3rem 2rem; }
@@ -582,6 +625,11 @@ img { max-width: 100%; display: block; }
   .page-hero { padding: 120px 5% 60px; }
   .page-hero h1 { font-size: 2.2rem; }
   .page-hero p { font-size: 1rem; }
+  
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .industries-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+  .industry-card { padding: 1.5rem 1rem !important; }
+  .industry-title { font-size: 1rem !important; }
   
   .contact-info-wrap { padding: 2rem 1.5rem; }
   .contact-item { flex-direction: column; text-align: center; }

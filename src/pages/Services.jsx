@@ -114,10 +114,20 @@ export default function Services() {
             <h2>Industries We Serve</h2>
             <p>Our scalable solutions are tailored for various business sectors.</p>
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center' }}>
-            {['FinTech & Finance', 'Healthcare & Medical', 'E-Commerce & Retail', 'Education & EdTech', 'Real Estate', 'Logistics & Supply Chain'].map((ind, i) => (
-              <div key={i} className="fade-up glass-card" style={{ transitionDelay: `${i*0.05}s`, background: '#f8fafc', padding: '1.5rem 2rem', borderRadius: '15px', fontWeight: '600', color: 'var(--secondary)', display: 'flex', alignItems: 'center', gap: '10px', border: '1px solid #e2e8f0' }}>
-                <i className="fas fa-check-circle" style={{ color: '#0ea5e9' }}></i> {ind}
+          <div className="industries-grid">
+            {[
+              { name: 'FinTech & Finance', icon: 'fa-chart-pie', color: 'blue' },
+              { name: 'Healthcare & Medical', icon: 'fa-heartbeat', color: 'pink' },
+              { name: 'E-Commerce & Retail', icon: 'fa-shopping-cart', color: 'orange' },
+              { name: 'Education & EdTech', icon: 'fa-graduation-cap', color: 'purple' },
+              { name: 'Real Estate', icon: 'fa-building', color: 'teal' },
+              { name: 'Logistics & Supply', icon: 'fa-truck', color: 'green' }
+            ].map((ind, i) => (
+              <div key={i} className={`industry-card fade-up box-glow-${ind.color}`} style={{ transitionDelay: `${i*0.1}s` }}>
+                <div className={`industry-icon bg-gradient-${ind.color}`}>
+                  <i className={`fas ${ind.icon}`}></i>
+                </div>
+                <h3 className="industry-title">{ind.name}</h3>
               </div>
             ))}
           </div>
