@@ -342,10 +342,10 @@ img { max-width: 100%; display: block; }
   .process-timeline { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 }
 @media (max-width: 768px) {
-  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 }
 @media (max-width: 480px) {
-  .process-timeline { grid-template-columns: 1fr; }
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 }
 .process-step { text-align: center; position: relative; z-index: 1; }
 .process-icon {
@@ -538,7 +538,7 @@ img { max-width: 100%; display: block; }
   .stats-grid { grid-template-columns: 1fr; gap: 3rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .section-padding { padding: 4rem 5%; }
-  .process-timeline { grid-template-columns: 1fr; }
+  .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .services-grid, .features-grid, .testimonials-grid, .portfolio-grid, .team-grid, .portfolio-gallery { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .about-features { grid-template-columns: 1fr; }
@@ -575,7 +575,9 @@ img { max-width: 100%; display: block; }
   .feature-icon { margin: 0 auto 1rem; }
   
   .service-card, .testimonial-card { padding: 1.5rem; }
-  .process-icon { width: 70px; height: 70px; font-size: 1.8rem; margin: 0 auto 1rem; }
+  .process-icon { width: 60px; height: 60px; font-size: 1.4rem; margin: 0 auto 0.5rem; }
+  .process-step h3 { font-size: 1rem; margin-bottom: 0.2rem; }
+  .process-step p { font-size: 0.8rem; }
   
   .page-hero { padding: 120px 5% 60px; }
   .page-hero h1 { font-size: 2.2rem; }
