@@ -626,10 +626,16 @@ img { max-width: 100%; display: block; }
   .page-hero h1 { font-size: 2.2rem; }
   .page-hero p { font-size: 1rem; }
   
-  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .industries-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
-  .industry-card { padding: 1.5rem 1rem !important; }
-  .industry-title { font-size: 1rem !important; }
+  .services-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.8rem !important; }
+  .service-card { padding: 1rem 0.5rem !important; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 160px; }
+  .service-icon { width: 45px !important; height: 45px !important; font-size: 1.1rem !important; margin: 0 auto 0.8rem !important; }
+  .service-card h3 { font-size: 0.95rem !important; margin-bottom: 0.4rem !important; line-height: 1.3; }
+  .service-card p { font-size: 0.75rem !important; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  
+  .industries-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.8rem !important; margin-top: 1rem !important; }
+  .industry-card { padding: 1rem 0.5rem !important; justify-content: center; gap: 0.6rem !important; min-height: 130px; }
+  .industry-icon { width: 45px !important; height: 45px !important; font-size: 1.2rem !important; margin-bottom: 0 !important; }
+  .industry-title { font-size: 0.85rem !important; line-height: 1.2 !important; margin: 0 !important; }
   
   .contact-info-wrap { padding: 2rem 1.5rem; }
   .contact-item { flex-direction: column; text-align: center; }
