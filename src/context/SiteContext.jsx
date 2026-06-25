@@ -12,7 +12,7 @@ export const SiteProvider = ({ children }) => {
     heroPrimaryBtn: "Get Free Consultation",
     heroSecondaryBtn: "View Portfolio",
     contactEmail: "abubakr.bgnu@gmail.com",
-    contactPhone: "03014696506",
+    contactPhone: "03097354874",
     whatsappNumber: "923097354874",
     contactAddress: "Manawala, Sheikhupura",
     adminPassword: "admin123",
