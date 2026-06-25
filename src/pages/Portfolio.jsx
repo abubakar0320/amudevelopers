@@ -62,16 +62,16 @@ export default function Portfolio() {
             <p style={{ maxWidth: '600px', margin: '0 auto' }}>Explore the individual portfolios, skills, and detailed backgrounds of our core team members.</p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+          <div className="team-portfolio-list">
             {teamPortfolios.map((person, idx) => (
-              <div className={`glass-card fade-up ${person.glow}`} key={idx} style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', background: 'rgba(255,255,255,0.95)', transitionDelay: `${idx * 0.1}s`, alignItems: 'center' }}>
-                <div style={{ flex: '1 1 250px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                  <img src={person.img} alt={person.name} style={{ width: '100%', maxWidth: '220px', height: 'auto', borderRadius: '15px', border: '5px solid white', boxShadow: '0 10px 20px rgba(0,0,0,0.1)', marginBottom: '1.5rem', background: 'white' }} />
-                  <div className={`colorful-badge ${person.badgeColor}`} style={{ color: 'white', border: 'none', padding: '0.5rem 1.5rem', borderRadius: '50px', fontSize: '0.85rem', fontWeight: 'bold' }}>{person.role}</div>
+              <div className={`glass-card fade-up team-member-card ${person.glow}`} key={idx} style={{ transitionDelay: `${idx * 0.1}s` }}>
+                <div className="team-member-avatar">
+                  <img src={person.img} alt={person.name} />
+                  <div className={`colorful-badge ${person.badgeColor}`}>{person.role}</div>
                 </div>
                 
-                <div style={{ flex: '2 1 400px' }}>
-                  <h2 style={{ fontSize: '2.2rem', color: 'var(--secondary)', marginBottom: '0.5rem' }}>{person.name}</h2>
+                <div className="team-member-info">
+                  <h2>{person.name}</h2>
                   <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '1.5rem', fontSize: '1.05rem' }}>{person.bio}</p>
                   
                   <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '2rem' }}>

@@ -593,6 +593,12 @@ img { max-width: 100%; display: block; }
   
   .footer { padding: 4rem 5% 2rem; }
   .footer-brand p { font-size: 0.95rem; }
+
+  /* Mobile specific fixes */
+  .glass-card, .glass-dark { padding: 1.5rem; }
+  .team-member-card { gap: 1.5rem; text-align: center; }
+  .team-member-info h2 { font-size: 1.8rem; }
+  .team-portfolio-list { gap: 2rem; }
 }
 
 /* Modal Styles */
@@ -830,6 +836,53 @@ img { max-width: 100%; display: block; }
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+/* Team Portfolio List (Portfolio Page) */
+.team-portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.team-member-card {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+}
+.team-member-avatar {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-member-avatar img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 15px;
+  border: 5px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  background: white;
+}
+.team-member-avatar .colorful-badge {
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.team-member-info {
+  flex: 2 1 400px;
+}
+.team-member-info h2 {
+  font-size: 2.2rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
 }
 .profile-body h3 {
   font-size: 1.4rem;
