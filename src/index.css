@@ -578,7 +578,12 @@ img { max-width: 100%; display: block; }
   
   .hamburger { display: flex; }
   .stats-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .footer-grid > div:nth-child(1) { grid-column: span 2; }
+  .footer-grid > div:nth-child(4) { grid-column: span 2; }
+  .footer-links h4 { font-size: 1.1rem; }
+  .footer-links ul li { font-size: 0.85rem; }
+  .footer-links ul li i { font-size: 0.9rem; margin-top: 0.2rem; }
   .section-padding { padding: 4rem 5%; }
   .process-timeline { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .testimonials-grid, .portfolio-grid, .team-grid { grid-template-columns: 1fr; }
