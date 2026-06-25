@@ -96,12 +96,13 @@ export default function Home() {
             <p>Browse through some of our most recent successful projects.</p>
           </div>
           <div className="portfolio-gallery">
-            {(siteData.portfolio && siteData.portfolio.length > 0 ? siteData.portfolio.slice(0,3) : [
+            {(siteData.portfolio && siteData.portfolio.length > 0 ? siteData.portfolio.slice(0,4) : [
               { title: "E-Commerce Platform", category: "Web App", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80", color: "purple" },
               { title: "FinTech Dashboard", category: "UI/UX Design", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", color: "teal" },
-              { title: "Healthcare Mobile App", category: "Mobile Dev", img: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80", color: "orange" }
+              { title: "Healthcare Mobile App", category: "Mobile Dev", img: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=600&q=80", color: "orange" },
+              { title: "AI Real Estate Tool", category: "AI Solutions", img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80", color: "primary" }
             ]).map((item, idx) => {
-              const colors = ['purple', 'teal', 'orange'];
+              const colors = ['purple', 'teal', 'orange', 'primary'];
               const badgeColor = item.color || colors[idx % 3];
               const glowClass = idx === 0 ? 'box-glow-purple' : idx === 1 ? 'box-glow-teal' : 'box-glow-orange';
               return (
@@ -422,7 +423,8 @@ export default function Home() {
             {[
               { title: "The Future of React and Server Components", date: "June 15, 2026", category: "Development", img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80" },
               { title: "Why UI/UX Design is Crucial for Startups", date: "June 10, 2026", category: "Design", img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" },
-              { title: "Scaling Node.js Applications on AWS", date: "June 02, 2026", category: "Cloud", img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" }
+              { title: "Scaling Node.js Applications on AWS", date: "June 02, 2026", category: "Cloud", img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" },
+              { title: "How AI is Reshaping Web Development", date: "May 28, 2026", category: "AI", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" }
             ].map((post, idx) => (
               <div className="blog-card glass-card fade-up" key={idx} style={{padding: 0, transitionDelay: `${idx * 0.1}s`}}>
                 <div className="blog-img" style={{height: '200px', overflow: 'hidden'}}>
