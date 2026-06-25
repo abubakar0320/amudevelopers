@@ -749,7 +749,7 @@ img { max-width: 100%; display: block; }
 }
 .marquee-container {
   display: flex;
-  width: 200%;
+  width: max-content;
   animation: marquee 25s linear infinite;
 }
 .marquee-container:hover {
@@ -757,15 +757,15 @@ img { max-width: 100%; display: block; }
 }
 .marquee-content {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  flex-shrink: 0;
   align-items: center;
 }
 .marquee-content img {
   max-height: 40px;
   filter: grayscale(0%) opacity(0.9);
   transition: var(--transition);
-  margin: 0 2rem;
+  margin: 0 3rem;
+  flex-shrink: 0;
 }
 .marquee-content img:hover {
   filter: grayscale(0%) opacity(1);
