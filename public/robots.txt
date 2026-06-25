@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin routes from being indexed
+Disallow: /admin
+Disallow: /admin-login
+
+Sitemap: https://amudevelopers.site/sitemap.xml

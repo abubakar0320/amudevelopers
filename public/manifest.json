@@ -1,0 +1,16 @@
+{
+  "short_name": "AMU Devs",
+  "name": "AMU Developers | Custom Software Solutions",
+  "description": "Award-winning software house in Pakistan specializing in custom software development, web applications, and mobile apps.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0b1120",
+  "background_color": "#0b1120"
+}
