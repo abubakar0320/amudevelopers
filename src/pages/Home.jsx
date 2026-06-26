@@ -73,12 +73,22 @@ export default function Home() {
               const glowClass = idx === 0 ? 'box-glow-blue' : idx === 1 ? 'box-glow-green' : idx === 2 ? 'box-glow-orange' : 'box-glow-purple';
               const iconBg = idx === 0 ? 'bg-gradient-primary' : idx === 1 ? 'bg-gradient-green' : idx === 2 ? 'bg-gradient-orange' : 'bg-gradient-purple';
               return (
-              <div className={`service-card glass-dark fade-up ${glowClass}`} key={service.id || idx} style={{transitionDelay: `${idx * 0.1}s`}}>
-                <div className={`service-icon ${iconBg}`}>
-                  <i className={`fas ${service.icon}`}></i>
-                </div>
-                <h3>{service.title}</h3>
-                <p>{service.desc}</p>
+              <div className={`service-card glass-dark fade-up ${glowClass}`} key={service.id || idx} style={{transitionDelay: `${idx * 0.1}s`, padding: '1.5rem', display: 'flex', flexDirection: 'column'}}>
+                {service.img && (
+                  <div style={{width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', position: 'relative'}}>
+                    <img src={service.img} alt={service.title} style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s'}} className="service-img-hover" />
+                    <div className={`service-icon ${iconBg}`} style={{position: 'absolute', bottom: '10px', right: '10px', width: '40px', height: '40px', margin: 0}}>
+                      <i className={`fas ${service.icon}`} style={{fontSize: '1.2rem'}}></i>
+                    </div>
+                  </div>
+                )}
+                {!service.img && (
+                  <div className={`service-icon ${iconBg}`}>
+                    <i className={`fas ${service.icon}`}></i>
+                  </div>
+                )}
+                <h3 style={{marginTop: service.img ? '0' : '1rem'}}>{service.title}</h3>
+                <p style={{flexGrow: 1}}>{service.desc}</p>
               </div>
             )})}
           </div>

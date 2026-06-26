@@ -17,14 +17,14 @@ export const SiteProvider = ({ children }) => {
     contactAddress: "Manawala, Sheikhupura",
     adminPassword: "admin123",
     services: [
-      { id: 1, icon: 'fa-code', title: 'Custom Software', desc: 'Tailored enterprise software solutions built to match your exact business requirements.' },
-      { id: 2, icon: 'fa-globe', title: 'Web Development', desc: 'Scalable, high-performance web applications and cloud portals.' },
-      { id: 3, icon: 'fa-mobile-alt', title: 'Mobile Apps', desc: 'Native and cross-platform mobile apps for iOS and Android.' },
-      { id: 4, icon: 'fa-pen-nib', title: 'UI/UX Design', desc: 'Intuitive, user-centered designs that drive engagement and conversions.' },
-      { id: 5, icon: 'fa-robot', title: 'AI & Automation', desc: 'Integrate artificial intelligence to automate processes and gain insights.' },
-      { id: 6, icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Secure cloud architecture, migration, and DevOps services.' },
-      { id: 7, icon: 'fa-shopping-cart', title: 'E-commerce', desc: 'Robust digital storefronts with seamless payment integrations.' },
-      { id: 8, icon: 'fa-headset', title: 'Maintenance', desc: 'Continuous monitoring, software updates, and dedicated tech support.' }
+      { id: 1, icon: 'fa-code', title: 'Custom Software', desc: 'Tailored enterprise software solutions built to match your exact business requirements.', img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 2, icon: 'fa-globe', title: 'Web Development', desc: 'Scalable, high-performance web applications and cloud portals.', img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 3, icon: 'fa-mobile-alt', title: 'Mobile Apps', desc: 'Native and cross-platform mobile apps for iOS and Android.', img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 4, icon: 'fa-pen-nib', title: 'UI/UX Design', desc: 'Intuitive, user-centered designs that drive engagement and conversions.', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 5, icon: 'fa-robot', title: 'AI & Automation', desc: 'Integrate artificial intelligence to automate processes and gain insights.', img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 6, icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Secure cloud architecture, migration, and DevOps services.', img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 7, icon: 'fa-shopping-cart', title: 'E-commerce', desc: 'Robust digital storefronts with seamless payment integrations.', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      { id: 8, icon: 'fa-headset', title: 'Maintenance', desc: 'Continuous monitoring, software updates, and dedicated tech support.', img: 'https://images.unsplash.com/photo-1581444537008-03886cdfb328?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
     ],
     portfolio: [
       { id: 1, cat: 'FinTech Platform', title: 'Global Payment Gateway', img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', desc: 'A comprehensive solution built with modern architecture to ensure scalability and flawless user experience.' },

@@ -86,16 +86,30 @@ export default function Services() {
                     cursor: 'pointer', 
                     borderTop: `4px solid var(--${color})`,
                     position: 'relative',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    padding: '1.5rem'
                   }}
                   onClick={() => setSelectedService(srv)}
                 >
                   <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '100px', height: '100px', background: `var(--${color})`, opacity: 0.05, borderRadius: '50%' }}></div>
-                  <div className={`service-icon bg-gradient-${color}`} style={{ color: 'white', border: 'none', boxShadow: `0 10px 20px var(--${color}-light, rgba(0,0,0,0.1))` }}>
-                    <i className={`fas ${srv.icon}`}></i>
-                  </div>
+                  
+                  {srv.img ? (
+                    <div style={{width: '100%', height: '200px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', position: 'relative'}}>
+                      <img src={srv.img} alt={srv.title} style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s'}} className="service-img-hover" />
+                      <div className={`service-icon bg-gradient-${color}`} style={{ position: 'absolute', bottom: '15px', right: '15px', width: '45px', height: '45px', margin: 0, color: 'white', border: 'none', boxShadow: `0 10px 20px var(--${color}-light, rgba(0,0,0,0.1))` }}>
+                        <i className={`fas ${srv.icon}`} style={{fontSize: '1.2rem'}}></i>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className={`service-icon bg-gradient-${color}`} style={{ color: 'white', border: 'none', boxShadow: `0 10px 20px var(--${color}-light, rgba(0,0,0,0.1))` }}>
+                      <i className={`fas ${srv.icon}`}></i>
+                    </div>
+                  )}
+
                   <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem', color: 'var(--secondary)' }}>{srv.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>{srv.desc}</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem', flexGrow: 1 }}>{srv.desc}</p>
                   
                   <div style={{ display: 'flex', alignItems: 'center', color: `var(--${color})`, fontWeight: '600', fontSize: '0.9rem', marginTop: 'auto' }}>
                     Request Quote <i className="fas fa-arrow-right" style={{ marginLeft: '8px', transition: 'transform 0.3s' }}></i>
