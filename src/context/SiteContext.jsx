@@ -24,7 +24,7 @@ export const SiteProvider = ({ children }) => {
       { id: 5, icon: 'fa-robot', title: 'AI & Automation', desc: 'Integrate artificial intelligence to automate processes and gain insights.', img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
       { id: 6, icon: 'fa-cloud', title: 'Cloud Solutions', desc: 'Secure cloud architecture, migration, and DevOps services.', img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
       { id: 7, icon: 'fa-shopping-cart', title: 'E-commerce', desc: 'Robust digital storefronts with seamless payment integrations.', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      { id: 8, icon: 'fa-headset', title: 'Maintenance', desc: 'Continuous monitoring, software updates, and dedicated tech support.', img: 'https://images.unsplash.com/photo-1581444537008-03886cdfb328?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      { id: 8, icon: 'fa-headset', title: 'Maintenance', desc: 'Continuous monitoring, software updates, and dedicated tech support.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80' }
     ],
     portfolio: [
       { id: 1, cat: 'FinTech Platform', title: 'Global Payment Gateway', img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', desc: 'A comprehensive solution built with modern architecture to ensure scalability and flawless user experience.' },

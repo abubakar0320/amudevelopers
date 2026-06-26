@@ -155,7 +155,7 @@ export default function Services() {
             <h2>How We Deliver Excellence</h2>
             <p>Our streamlined process ensures your project is delivered on time, within budget, and to the highest standards.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+          <div className="process-grid">
             {[
               { step: '01', title: 'Discovery & Planning', desc: 'We analyze your requirements, business goals, and target audience to craft a roadmap.', icon: 'fa-search', color: 'purple' },
               { step: '02', title: 'UI/UX Design', desc: 'Our designers create wireframes and high-fidelity prototypes for a flawless user journey.', icon: 'fa-pen-nib', color: 'orange' },
