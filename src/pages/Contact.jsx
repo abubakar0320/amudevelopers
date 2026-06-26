@@ -188,7 +188,7 @@ export default function Contact() {
       {/* 3. Embedded Map Section */}
       <section style={{ height: '400px', width: '100%', background: '#e2e8f0', position: 'relative' }}>
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13601.370830722379!2d73.6841101!3d31.5422119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185df2d9483dc3%3A0x6b77242d54e48ec!2sMananwala%2C%20Sheikhupura%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13601.370830722379!2d73.6841101!3d31.5422119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185df2d9483dc3%3A0x6b77242d54e48ec!2sMananwala%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
           width="100%" 
           height="100%" 
           style={{ border: 0 }} 

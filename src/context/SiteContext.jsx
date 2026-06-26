@@ -14,7 +14,7 @@ export const SiteProvider = ({ children }) => {
     contactEmail: "amudevelopers@gmail.com",
     contactPhone: "03097354874",
     whatsappNumber: "923097354874",
-    contactAddress: "Manawala, Sheikhupura",
+    contactAddress: "Mananwala, Lahore, Pakistan",
     adminPassword: "admin123",
     services: [
       { id: 1, icon: 'fa-code', title: 'Custom Software', desc: 'Tailored enterprise software solutions built to match your exact business requirements.', img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
