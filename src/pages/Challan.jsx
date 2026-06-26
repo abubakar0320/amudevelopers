@@ -82,7 +82,7 @@ const Challan = () => {
               <span style={{color: 'var(--secondary)', marginLeft: '8px'}}>Developers</span>
             </h1>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '5px 0 0 0' }}>Software Solutions & Consultancy</p>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '2px 0 0 0' }}>Email: abubakr.bgnu@gmail.com | amudevelopers.com</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '2px 0 0 0' }}>Email: {siteData?.contactEmail || 'amudevelopers@gmail.com'} | amudevelopers.com</p>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: '2px 0 0 0' }}>Phone: 03097354874 | 03014697506</p>
           </div>
           <div style={{ textAlign: 'right' }}>
@@ -183,7 +183,7 @@ const Challan = () => {
             <p style={{ margin: '3px 0', fontSize: '0.95rem' }}><strong>Bank Name:</strong> Meezan Bank</p>
             <p style={{ margin: '3px 0', fontSize: '0.95rem' }}><strong>Account Title:</strong> Abubakar Siddique</p>
             <p style={{ margin: '3px 0', fontSize: '0.95rem' }}><strong>Account No:</strong> PK87MEZN0098690114217768</p>
-            <p style={{ margin: '15px 0 0 0', fontSize: '0.85rem', color: '#64748b', fontStyle: 'italic' }}>Please send the payment receipt to abubakr.bgnu@gmail.com with your Challan No.</p>
+            <p style={{ margin: '15px 0 0 0', fontSize: '0.85rem', color: '#64748b', fontStyle: 'italic' }}>Please send the payment receipt to {siteData?.contactEmail || 'amudevelopers@gmail.com'} with your Challan No.</p>
           </div>
           <div style={{ width: '30%', textAlign: 'center', border: '1px dashed #cbd5e1', padding: '1.5rem', borderRadius: '10px' }}>
             <h4 style={{ color: 'var(--text-muted)', marginBottom: '1rem', fontSize: '0.9rem', textTransform: 'uppercase' }}>Official Seal / Sign</h4>

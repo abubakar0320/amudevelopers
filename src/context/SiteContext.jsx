@@ -11,7 +11,7 @@ export const SiteProvider = ({ children }) => {
     heroSubtitle: "We provide custom software development, web applications, mobile apps, UI/UX design, AI solutions, and complete digital transformation services to scale your business.",
     heroPrimaryBtn: "Get Free Consultation",
     heroSecondaryBtn: "View Portfolio",
-    contactEmail: "abubakr.bgnu@gmail.com",
+    contactEmail: "amudevelopers@gmail.com",
     contactPhone: "03097354874",
     whatsappNumber: "923097354874",
     contactAddress: "Manawala, Sheikhupura",

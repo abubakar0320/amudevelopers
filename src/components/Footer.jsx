@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="social-links">
               <a href="https://www.linkedin.com/in/abubakar0320/" aria-label="LinkedIn" target="_blank" rel="noreferrer" className="li"><i className="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/abubakar0320" aria-label="GitHub" target="_blank" rel="noreferrer" className="gh"><i className="fab fa-github"></i></a>
-              <a href={`mailto:${siteData?.contactEmail || 'abubakr.bgnu@gmail.com'}`} aria-label="Gmail" className="gm"><i className="fas fa-envelope"></i></a>
+              <a href={`mailto:${siteData?.contactEmail || 'amudevelopers@gmail.com'}`} aria-label="Gmail" className="gm"><i className="fas fa-envelope"></i></a>
               <a href={`https://wa.me/${siteData?.whatsappNumber || '923097354874'}`} aria-label="WhatsApp" target="_blank" rel="noreferrer" className="wa"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
